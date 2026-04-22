@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import IncidentsPage from './pages/IncidentsPage';
 
 function App() {
@@ -7,11 +7,11 @@ function App() {
       <div className="app">
         <nav className="navbar">
           <h1>SOC Dashboard</h1>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/incidents">Incidents</a></li>
-            <li><a href="/scans">Scans</a></li>
-          </ul>
+         <ul>
+  <li><Link to="/">Home</Link></li>
+  <li><Link to="/incidents">Incidents</Link></li>
+  <li><Link to="/scans">Scans</Link></li>
+</ul>
         </nav>
 
         <main className="main-content">

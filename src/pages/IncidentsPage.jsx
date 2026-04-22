@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { incidentService } from '../services/api';
+import IncidentForm from "../components/IncidentForm";
 
 function IncidentsPage() {
   const [incidents, setIncidents] = useState([]);
